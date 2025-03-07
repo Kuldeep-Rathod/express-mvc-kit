@@ -4,8 +4,8 @@ import { jwtSecret } from "../config/env.js";
 export const sendCookie = (user, res, message, statusCode = 200) => {
     const token = jwt.sign({ _id: user._id }, jwtSecret, { expiresIn: "10m" });
 
-    console.log(jwtSecret);
-    console.log(token);
+    // console.log(jwtSecret);
+    // console.log(token);
 
     res.status(statusCode)
         .cookie("token", token, {
@@ -17,5 +17,6 @@ export const sendCookie = (user, res, message, statusCode = 200) => {
         .json({
             success: true,
             message,
+            token,
         });
 };
