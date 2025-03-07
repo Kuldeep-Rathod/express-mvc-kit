@@ -7,7 +7,7 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const repoUrl = "https://github.com/Kuldeep-Rathod/express-mvc-gen.git";
+const repoUrl = "https://github.com/Kuldeep-Rathod/express-mvc-kit.git";
 const projectName = process.argv[2] || "my-express-app";
 const targetPath = path.join(process.cwd(), projectName);
 
