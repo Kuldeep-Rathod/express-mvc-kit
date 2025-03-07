@@ -1,23 +1,25 @@
 #!/usr/bin/env node
 import { execSync } from "child_process";
-import path from "path";
-import fs from "fs";
-import { fileURLToPath } from "url";
+import { existsSync } from "fs";
+import { join } from "path";
+import { cwd } from "process";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+// Get the project name from command-line arguments
+const projectName = process.argv[2] || "my-app";
+const projectPath = join(cwd(), projectName);
 
-const repoUrl = "https://github.com/Kuldeep-Rathod/express-mvc-kit.git";
-const projectName = process.argv[2] || "my-express-app";
-const targetPath = path.join(process.cwd(), projectName);
-
-if (fs.existsSync(targetPath)) {
-    console.error(`Error: Directory ${projectName} already exists!`);
-    process.exit(1);
+if (existsSync(projectPath)) {
+  console.error(`❌ Error: Directory "${projectName}" already exists.`);
+  process.exit(1);
 }
 
-console.log("Cloning repository...");
-execSync(`git clone ${repoUrl} ${targetPath}`, { stdio: "inherit" });
+console.log(`🚀 Cloning express-mvc-starter into ${projectName}...`);
 
-console.log("Installation complete. Navigate to the project:");
-console.log(`cd ${projectName} && npm install`);
+try {
+  // Wrap projectPath in double quotes to handle spaces in directory names
+  execSync(`git clone https://github.com/Kuldeep-Rathod/express-mvc-starter.git "${projectPath}"`, { stdio: "inherit" });
+  console.log(`✅ Successfully cloned into ${projectPath}`);
+} catch (error) {
+  console.error("❌ Failed to clone repository:", error.message);
+  process.exit(1);
+}
