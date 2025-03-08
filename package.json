@@ -1,13 +1,26 @@
 {
   "name": "express-mvcx",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "src/server.js",
   "type": "module",
   "scripts": {
     "start": "node src/server.js",
     "dev": "nodemon src/server.js"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kuldeep-Rathod/express-mvcx.git"
+  },
+  "homepage": "https://github.com/Kuldeep-Rathod/express-mvcx#readme",
+  "keywords": [
+    "express",
+    "mvc",
+    "express-mvc",
+    "backend",
+    "node",
+    "folder-structure",
+    "express-structure"
+  ],
   "author": "",
   "license": "ISC",
   "description": "",
