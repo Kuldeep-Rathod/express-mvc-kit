@@ -1,14 +1,14 @@
-# Express-MVCX
+# Express-MVC-Kit
 
-🚀 **Express-MVCX** is a simple CLI tool that helps you quickly set up an Express.js project with an MVC architecture. It streamlines project creation by cloning a pre-configured Express.js starter template.
+🚀 **Express-MVC-Kit** is a simple CLI tool that helps you quickly set up an Express.js project with an MVC architecture. It streamlines project creation by cloning a pre-configured Express.js starter template.
 
 ## 📦 Installation & Usage
 
 ### **One-Step Command**
-Instead of using `npm i express-mvcx`, run:
+Instead of using `npm i express-mvc-kit`, run:
 
 ```sh
-npm exec express-mvcx my-app
+npm exec express-mvc-kit my-app
 ```
 
 This will **install and execute** the package in a single step.
@@ -17,13 +17,13 @@ This will **install and execute** the package in a single step.
 Alternatively, you can install it globally:
 
 ```sh
-npm install -g express-mvcx
+npm install -g express-mvc-kit
 ```
 
 Then create a new project with:
 
 ```sh
-express-mvcx my-app
+express-mvc-kit my-app
 ```
 
 ---
@@ -75,8 +75,8 @@ Want to improve this project? Feel free to fork the repo and submit a pull reque
 
 ### **Clone the repo:**
 ```sh
-git clone https://github.com/Kuldeep-Rathod/express-mvcx.git
-cd express-mvcx
+git clone https://github.com/Kuldeep-Rathod/express-mvc-kit.git
+cd express-mvc-kit
 npm install
 ```
 
@@ -90,15 +90,15 @@ This project is licensed under the **MIT License**.
 
 ## 🔗 Links
 
-- **GitHub:** [express-mvcx](https://github.com/Kuldeep-Rathod/express-mvcx)
-- **NPM Package:** [express-mvcx](https://www.npmjs.com/package/express-mvcx)
+- **GitHub:** [express-mvc-kit](https://github.com/Kuldeep-Rathod/express-mvc-kit)
+- **NPM Package:** [express-mvc-kit](https://www.npmjs.com/package/express-mvc-kit)
 
 ---
 
 ## 📢 Support
 
 If you find this package helpful, ⭐ star the repo on GitHub!  
-For issues, open a ticket in the [GitHub Issues](https://github.com/Kuldeep-Rathod/express-mvcx/issues).  
+For issues, open a ticket in the [GitHub Issues](https://github.com/Kuldeep-Rathod/express-mvc-kit/issues).  
 
 Happy Coding! 🚀
 

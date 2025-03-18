@@ -1,6 +1,6 @@
 {
-  "name": "express-mvcx",
-  "version": "1.0.4",
+  "name": "express-mvc-kit",
+  "version": "1.0.6",
   "main": "src/server.js",
   "type": "module",
   "scripts": {
@@ -9,9 +9,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Kuldeep-Rathod/express-mvcx.git"
+    "url": "https://github.com/Kuldeep-Rathod/express-mvc-kit.git"
   },
-  "homepage": "https://github.com/Kuldeep-Rathod/express-mvcx#readme",
+  "homepage": "https://github.com/Kuldeep-Rathod/express-mvc-kit#readme",
   "keywords": [
     "express",
     "mvc",
@@ -25,7 +25,7 @@
   "license": "ISC",
   "description": "",
   "bin": {
-    "express-mvcx": "./install.js"
+    "express-mvc-kit": "./install.js"
   },
   "dependencies": {
     "bcrypt": "^5.1.1",
